@@ -1,8 +1,11 @@
-import sys 
+#!/usr/bin/python3
+import sys
 
+def factorial(n):
+    result = 1
+    while n > 1:
+        result *= n
+    return result
 
-for i in range(len(sys.argv)):
-    print(sys.argv[i])
-
-    $./print_arguments.py 1 2 3 
-    print_argumentd.py
+f = factorial(int(sys.argv[1]))
+print(f)
